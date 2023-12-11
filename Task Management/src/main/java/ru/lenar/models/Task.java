@@ -41,7 +41,6 @@ public class Task{
     @Enumerated(EnumType.STRING)
     private Status status = Status.AWAIT;
 
-    @Builder.Default
     @Enumerated
     private Priority priority = Priority.MEDIUM;
 
