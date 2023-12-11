@@ -10,7 +10,7 @@ docker-compose up .
 порт приложения `localhost:8080`
 
 - регистрация пользователя `POST` `/api/signUp`.
-- авторизация пользователя `POS`T `/api/login`.
+- авторизация пользователя `POS` `/api/login`.
 - создание новой задачи `POST` `/api/tasks/create`. Автором является пользователь, создавший задачу.
 - получение списка задач автора/исполнителя `GET` `/api/tasks/byAuthor/{author_id/executor_id}?page={}&size={}`.
 - редактирование задачи `PUT` `/api/tasks/{task_id}`.
