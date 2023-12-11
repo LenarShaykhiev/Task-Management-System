@@ -1,10 +1,10 @@
 # Task-Management-System
 ## Инструкция для запуска приложения:
 ```
-docker build -t application-image
+$ docker build -t application-image
 ```
 ```
-docker-compose up .
+$ docker-compose up .
 ```
 ## Реализованные функции:
 порт приложения `localhost:8080`
