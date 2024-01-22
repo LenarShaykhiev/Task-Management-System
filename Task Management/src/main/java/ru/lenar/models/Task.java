@@ -3,23 +3,25 @@ package ru.lenar.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Task{
+public class Task {
 
     public enum Status {
         AWAIT, PROCESS, COMPLETED
-    };
+    }
+
+    ;
 
     public enum Priority {
         LOW, MEDIUM, HIGH
-    };
+    }
+
+    ;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,11 +31,11 @@ public class Task{
     private String description;
     private String comment;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
     private Customer author;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "executor_id")
     private Customer executor;
 
