@@ -1,0 +1,58 @@
+POST localhost:8080/api/signUp
+Content-Type: application/json
+
+{
+  "firstName": "Lenar",
+   "lastName": "Shaykhiev",
+   "email": "lenar2000@gmail.com",
+   "password": "14032000!"
+}
+
+###
+
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "email": "lenar2000@gmail.com",
+  "password": "14032000!"
+}
+
+###
+
+GET localhost/api/tasks/byAuthor/67?page=0&size=2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcm1lbWEyQGdtYWlsLmNvbSIsImV4cCI6MTcwMjY1MjMyMiwiYXV0aG9yaXRpZXMiOiJbUk9MRV9VU0VSXSIsImVtYWlsIjoiZXJtZW1hMkBnbWFpbC5jb20ifQ.1rTyUM8rL0LA3eHf-JGomLctE6iQXJTpEQnIokXoge2m64ZrHRPo88ly_hYk2E5keFy6ogxsLokCt0D1C_IhrA
+###
+
+GET localhost/api/tasks/byExecutor/67?page=0&size=2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcm1lbWEyQGdtYWlsLmNvbSIsImV4cCI6MTcwMjY1MjMyMiwiYXV0aG9yaXRpZXMiOiJbUk9MRV9VU0VSXSIsImVtYWlsIjoiZXJtZW1hMkBnbWFpbC5jb20ifQ.1rTyUM8rL0LA3eHf-JGomLctE6iQXJTpEQnIokXoge2m64ZrHRPo88ly_hYk2E5keFy6ogxsLokCt0D1C_IhrA
+###
+
+POST localhost/api/tasks/create
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZW5hcjIwMDBAZ21haWwuY29tIiwiZXhwIjoxNzAyNjU1NTc2LCJhdXRob3JpdGllcyI6IltST0xFX1VTRVJdIiwiZW1haWwiOiJsZW5hcjIwMDBAZ21haWwuY29tIn0.-WoMUgnqPyrnSVa7juQuEL2Vt1ylk2ukK3m0tuwPSq9IHfbA6LRYvQzYGClIhlZvckYZqAHGGHt-wWXvjZsikw
+
+{
+  "title": "Result",
+  "description": "result",
+  "executorId": 20
+}
+
+###
+
+PUT localhost/api/tasks/25
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcm1lbWEyQGdtYWlsLmNvbSIsImV4cCI6MTcwMjY1MjMyMiwiYXV0aG9yaXRpZXMiOiJbUk9MRV9VU0VSXSIsImVtYWlsIjoiZXJtZW1hMkBnbWFpbC5jb20ifQ.1rTyUM8rL0LA3eHf-JGomLctE6iQXJTpEQnIokXoge2m64ZrHRPo88ly_hYk2E5keFy6ogxsLokCt0D1C_IhrA
+
+{
+  "priority": "medium"
+}
+
+###
+
+DELETE localhost/api/tasks/76
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcm1lbWEyQGdtYWlsLmNvbSIsImV4cCI6MTcwMjY1MjMyMiwiYXV0aG9yaXRpZXMiOiJbUk9MRV9VU0VSXSIsImVtYWlsIjoiZXJtZW1hMkBnbWFpbC5jb20ifQ.1rTyUM8rL0LA3eHf-JGomLctE6iQXJTpEQnIokXoge2m64ZrHRPo88ly_hYk2E5keFy6ogxsLokCt0D1C_IhrA
+###
+
+GET localhost/v2/api-docs
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcm1lbWEyQGdtYWlsLmNvbSIsImV4cCI6MTcwMjY1MjMyMiwiYXV0aG9yaXRpZXMiOiJbUk9MRV9VU0VSXSIsImVtYWlsIjoiZXJtZW1hMkBnbWFpbC5jb20ifQ.1rTyUM8rL0LA3eHf-JGomLctE6iQXJTpEQnIokXoge2m64ZrHRPo88ly_hYk2E5keFy6ogxsLokCt0D1C_IhrA
